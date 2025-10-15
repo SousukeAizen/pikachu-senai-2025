@@ -1,9 +1,9 @@
 *{
 padding: 0;
-margin: 0;
+margin: 70;
 box-sizing: border-box;
 
-a {
+a{
     text-decoration: none;
     color: inherit;
     
@@ -11,10 +11,6 @@ a {
 
 ol, ul, li {
     list-style: none;
-
-
-
-
 
 }
 
