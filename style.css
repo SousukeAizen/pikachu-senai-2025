@@ -29,7 +29,7 @@ main {
     flex-direction: column;
 }
 
-.sobra {
+.sombra {
     font-size: 26vw;
     position: absolute;
     color: #ffffff55;
@@ -44,7 +44,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22vw;
+    font-size: 20vw;
     color:white;
     flex-grow: 1;
 }
@@ -93,13 +93,14 @@ footer {
 
 }
 
+
 /*Tablet*/
 @media (max-width: 768px) {
     body {
         height: 30px;
     }
 
-    .sobra{
+    .sombra{
         transform: translate(-50%, -180%);
     }
 
@@ -137,6 +138,27 @@ footer {
 
 }
 /*MOBILE*/
-@media (max-width: 480px ) {
+@media (max-width: 480px) {
+    
+    .descricao h2{
+        font-size: 38px;
+    }
+    
+    .descricao p {
+        display: none;
+
+    }
+
+    .sombra {
+        transform: translate(50%, -230);
+    }
+
+    .pikachu{
+        height: 50vh;
+    }
+
+    .conteiner a {
+        width: 100%;
+    }
 
 }
