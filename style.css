@@ -1,12 +1,6 @@
 :root{
     --primary-color: #F5CF06 ;
     --secundary-color: #8E4106 ;
-
-
-
-
-
-
 }
 
 body{
@@ -29,14 +23,14 @@ header span {
     color: var(--secundary-color);
 }
 
-.main {
+main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
 .sobra {
-    font-size: 400px;
+    font-size: 26vw;
     position: absolute;
     color: #ffffff55;
     z-index: -999;
@@ -50,17 +44,15 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 auto;
-    font-size: 300px;
-    color:rgb(255, 255, 255);
+    font-size: 22vw;
+    color:white;
+    flex-grow: 1;
 }
 
 .conteiner{
-    height: 15px;
-    
+    height: 154px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 200px;
     align-items: flex-end;
     padding-bottom: 64px;
 }
@@ -98,5 +90,53 @@ h1{
 footer {
     text-align: center;
     color: var(--secundary-color);
+
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    body {
+        height: 30px;
+    }
+
+    .sobra{
+        transform: translate(-50%, -180%);
+    }
+
+    main{
+        justify-content: space-between;
+
+
+    }
+
+    h1{
+        align-items: start;
+        transform: translateY(40%);
+        flex-grow: 0.8;
+
+    }
+
+    .conteiner{
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        align-items: center;
+    }
+
+    .descricao p{
+        text-align: center;
+    }
+    
+    
+    footer {
+        display: none;
+    }
+
+
+
+
+}
+/*MOBILE*/
+@media (max-width: 480px ) {
 
 }
